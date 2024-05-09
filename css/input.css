@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .carousel {
-  background-image: url("/img/carousel-1.jpg");
+  background-image: url("../img/carousel-1.jpg");
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-position: center;
