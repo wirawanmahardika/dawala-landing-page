@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="icon" href="/img/dawala-logo.png" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins">
+    <!-- start navbar -->
+    <nav
+      class="sticky top-0 p-3 bg-slate-900 flex justify-between items-center z-[999]"
+    >
+      <h1 class="font-bold text-2xl text-yellow-500 uppercase">Dawala Hotel</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        class="size-9 cursor-pointer"
+        id="nav-toggle"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </nav>
+
+    <!-- floated navbar -->
+    <div
+      id="floated-navbar"
+      class="nav-transition nav-appear || md:hidden left-0 top-0 bottom-0 w-1/2 bg-slate-950 text-white z-[999] fixed"
+    >
+      <ul class="p-4 space-y-4 text-lg">
+        <li class="hover:text-yellow-500">Home</li>
+        <li class="hover:text-yellow-500">About</li>
+        <li class="hover:text-yellow-500">Contact</li>
+      </ul>
+    </div>
+    <!-- end floated navbar -->
+    <!-- end navbar -->
+
+    <!-- start carousel -->
+    <div
+      class="carousel || w-full h-[80vh] relative flex items-center justify-center"
+    >
+      <div
+        class="w-full h-full bg-black bg-opacity-50 absolute top-0 left-0"
+      ></div>
+      <div
+        class="m-auto flex flex-col justify-center items-center relative z-10 gap-y-6"
+      >
+        <h3
+          class="font-bold text-3xl capitalize text-white text-center font-poppins"
+        >
+          Discover A Brand <br />
+          Luxurious Hotel
+        </h3>
+        <a
+          href="#"
+          class="px-4 py-3 font-semibold uppercase font-roboto bg-yellow-600 rounded text-white"
+          >Our Rooms</a
+        >
+      </div>
+    </div>
+    <!-- end carousel -->
+
+    <!-- start about -->
+    <div class="w-full p-5 mt-7">
+      <div class="flex items-center justify-center gap-x-3">
+        <hr class="w-1/5 bg-yellow-500 h-[2px] border-none" />
+        <h2 class="font-bold text-yellow-600 text-2xl text-center uppercase">
+          About Us
+        </h2>
+        <hr class="w-1/5 bg-yellow-500 h-[2px] border-none" />
+      </div>
+
+      <h3 class="font-semibold text-xl my-3">
+        Welcome To <span class="text-yellow-500">Dawala</span>
+      </h3>
+
+      <p class="text-sm mt-4 text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+        explicabo accusamus placeat soluta nulla necessitatibus excepturi
+        nesciunt iusto voluptas quae quod cupiditate ad. Dolore amet asperiores
+        impedit sunt id libero.
+      </p>
+
+      <div class="flex flex-col mt-3 gap-y-5">
+        <div
+          class="flex flex-col items-center p-4 rounded ring ring-yellow-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-10 fill-yellow-600"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.5 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5h-.75V3.75a.75.75 0 0 0 0-1.5h-15ZM9 6a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm-.75 3.75A.75.75 0 0 1 9 9h1.5a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM9 12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H9Zm3.75-5.25A.75.75 0 0 1 13.5 6H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM13.5 9a.75.75 0 0 0 0 1.5H15A.75.75 0 0 0 15 9h-1.5Zm-.75 3.75a.75.75 0 0 1 .75-.75H15a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM9 19.5v-2.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 19.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="font-bold text-2xl">3</span>
+          <h4 class="font-semibold text-slate-600">Rooms</h4>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-4 rounded ring ring-yellow-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="size-10 fill-yellow-600"
+          >
+            <path
+              d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <span class="font-bold text-2xl">3</span>
+          <h4 class="font-semibold text-slate-600">Events</h4>
+        </div>
+
+        <div
+          class="flex flex-col items-center p-4 rounded ring ring-yellow-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-10 fill-yellow-600"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+              clip-rule="evenodd"
+            />
+            <path
+              d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z"
+            />
+          </svg>
+
+          <span class="font-bold text-2xl">3</span>
+          <h4 class="font-semibold text-slate-600">Clients</h4>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+
+    <!-- start rooms -->
+    <div class="w-full p-5 mt-7">
+      <div class="flex items-center justify-center gap-x-3">
+        <hr class="w-1/5 bg-yellow-500 h-[2px] border-none" />
+        <h2 class="font-bold text-yellow-600 text-2xl text-center uppercase">
+          Rooms
+        </h2>
+        <hr class="w-1/5 bg-yellow-500 h-[2px] border-none" />
+      </div>
+
+      <h3 class="font-semibold text-xl my-3">
+        Explore Our <span class="text-yellow-500">Rooms</span>
+      </h3>
+
+      <div class="flex flex-col gap-y-5">
+        <div class="shadow-2xl flex flex-col">
+          <img src="/img/carousel-1.jpg" alt="image" />
+          <div class="p-4 flex flex-col gap-y-2">
+            <h3 class="font-semibold text-xl">Executive Suite</h3>
+            <span>Rp 500.000</span>
+            <div class="flex w-full justify-between">
+              <span
+                class="px-4 py-1 bg-yellow-600 text-stone-800 rounded font-semibold"
+                >View Details</span
+              >
+              <span
+                class="px-4 py-1 bg-yellow-600 text-stone-800 rounded font-semibold"
+                >Book Now</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-2xl flex flex-col">
+          <img src="/img/carousel-1.jpg" alt="image" />
+          <div class="p-4 flex flex-col gap-y-2">
+            <h3 class="font-semibold text-xl">Junior Suite</h3>
+            <span>Rp 600.000</span>
+            <div class="flex w-full justify-between">
+              <span
+                class="px-4 py-1 bg-yellow-600 text-stone-800 rounded font-semibold"
+                >View Details</span
+              >
+              <span
+                class="px-4 py-1 bg-yellow-600 text-stone-800 rounded font-semibold"
+                >Book Now</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end rooms -->
+
+    <!-- start showcase -->
+    <div class="w-full p-5 mt-7">
+      <div class="flex items-center justify-center gap-x-3">
+        <hr class="w-1/5 bg-yellow-500 h-[2px] border-none" />
+        <h2 class="font-bold text-yellow-600 text-2xl text-center uppercase">
+          Showcase
+        </h2>
+        <hr class="w-1/5 bg-yellow-500 h-[2px] border-none" />
+      </div>
+
+      <h3 class="font-semibold text-xl my-3">
+        Explore The <span class="text-yellow-500">Hotel</span>
+      </h3>
+
+      <div class="flex flex-col gap-y-5">
+        <div class="shadow-2xl flex flex-col">
+          <iframe
+            class="w-full"
+            src="https://www.youtube.com/embed/zMgBmr9OUV4?si=fnMd1L1h7AM8pvG3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <div class="p-4 flex flex-col gap-y-2">
+            <h3 class="font-semibold text-xl">Rest Room</h3>
+          </div>
+        </div>
+        <div class="shadow-2xl flex flex-col">
+          <iframe
+            class="w-full"
+            src="https://www.youtube.com/embed/7QoCsrs8aJk?si=JonFzcVu8jDYeLkp"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <div class="p-4 flex flex-col gap-y-2">
+            <h3 class="font-semibold text-xl">Parking Lot</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end rooms -->
+  </body>
+
+  <script src="animation.js"></script>
+</html>

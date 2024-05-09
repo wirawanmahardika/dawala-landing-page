@@ -1,0 +1,7 @@
+.nav-appear {
+  transform: translateX(-100vh);
+}
+
+.nav-transition {
+  transition: transform 0.3s linear;
+}
