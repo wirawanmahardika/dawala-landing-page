@@ -5,3 +5,7 @@
 .nav-transition {
   transition: 0.3s linear;
 }
+
+.promo-transition {
+  transition: 0.3s linear;
+}
