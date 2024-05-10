@@ -660,6 +660,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-10 {
   width: 2.5rem;
   height: 2.5rem;
@@ -705,6 +709,10 @@ video {
 
 .h-72 {
   height: 18rem;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .w-1\/2 {
@@ -767,6 +775,10 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
