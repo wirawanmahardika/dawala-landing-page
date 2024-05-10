@@ -1,5 +1,5 @@
 document.getElementById("nav-toggle").addEventListener("click", (e) => {
-  document.getElementById("floated-navbar").classList.toggle("nav-appear");
+  document.getElementById("floated-navbar").classList.toggle("hide-nav");
 });
 
 const room1 = document.getElementById("room-1");
