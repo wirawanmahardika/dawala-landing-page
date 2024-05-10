@@ -4,8 +4,9 @@ document.getElementById("nav-toggle").addEventListener("click", (e) => {
 
 const room1 = document.getElementById("room-1");
 const room2 = document.getElementById("room-2");
+const room3 = document.getElementById("room-3");
 
-Array.from([room1, room2]).forEach((r) => {
+Array.from([room1, room2, room3]).forEach((r) => {
   const images = r.dataset.images.split(";");
   const next = r.lastElementChild;
   const prev = next.previousElementSibling;
