@@ -27,61 +27,61 @@ Array.from([room1, room2]).forEach((r) => {
   });
 });
 
-const promoImages = [
-  "https://www.static-src.com/siva/asset/05_2024/desktop-car6-acernitro-may10.jpg?w=1200",
-  "https://www.static-src.com/siva/asset/05_2024/desktop-car1-schooliday-may11.jpg?w=1200",
-  "https://www.static-src.com/siva/asset/05_2024/desktop-car3-oto-may11.jpg?w=1200",
-  "https://www.static-src.com/siva/asset/05_2024/desktop-car5-blythe-may11_comp.jpg?w=1200",
-];
+// const promoImages = [
+//   "https://www.static-src.com/siva/asset/05_2024/desktop-car6-acernitro-may10.jpg?w=1200",
+//   "https://www.static-src.com/siva/asset/05_2024/desktop-car1-schooliday-may11.jpg?w=1200",
+//   "https://www.static-src.com/siva/asset/05_2024/desktop-car3-oto-may11.jpg?w=1200",
+//   "https://www.static-src.com/siva/asset/05_2024/desktop-car5-blythe-may11_comp.jpg?w=1200",
+// ];
 
-const promoCanvas = document.getElementById("promo-canvas");
-const slideInfo = document.getElementById("slide-info");
+// const promoCanvas = document.getElementById("promo-canvas");
+// const slideInfo = document.getElementById("slide-info");
 
-let currentPromoImage = 0;
-promoImages.forEach((e, i) => {
-  const slideDot = document.createElement("div");
-  slideDot.classList.add(
-    "rounded-full",
-    "size-2",
-    "border",
-    "sm:border-2",
-    "border-black",
-    "md:size-4",
-    "sm:size-3"
-  );
+// let currentPromoImage = 0;
+// promoImages.forEach((e, i) => {
+//   const slideDot = document.createElement("div");
+//   slideDot.classList.add(
+//     "rounded-full",
+//     "size-2",
+//     "border",
+//     "sm:border-2",
+//     "border-black",
+//     "md:size-4",
+//     "sm:size-3"
+//   );
 
-  if (currentPromoImage === i) slideDot.classList.add("bg-black");
-  slideInfo.appendChild(slideDot);
-});
+//   if (currentPromoImage === i) slideDot.classList.add("bg-black");
+//   slideInfo.appendChild(slideDot);
+// });
 
-document.getElementById("promo-next-btn").addEventListener("click", () => {
-  if (currentPromoImage === promoImages.length - 1) currentPromoImage = 0;
-  else currentPromoImage++;
-  promoCanvas.src = promoImages[currentPromoImage];
-  updateSlideInfo();
-});
+// document.getElementById("promo-next-btn").addEventListener("click", () => {
+//   if (currentPromoImage === promoImages.length - 1) currentPromoImage = 0;
+//   else currentPromoImage++;
+//   promoCanvas.src = promoImages[currentPromoImage];
+//   updateSlideInfo();
+// });
 
-document.getElementById("promo-prev-btn").addEventListener("click", () => {
-  if (currentPromoImage !== 0) currentPromoImage--;
-  else currentPromoImage = promoImages.length - 1;
-  promoCanvas.src = promoImages[currentPromoImage];
-  updateSlideInfo();
-});
+// document.getElementById("promo-prev-btn").addEventListener("click", () => {
+//   if (currentPromoImage !== 0) currentPromoImage--;
+//   else currentPromoImage = promoImages.length - 1;
+//   promoCanvas.src = promoImages[currentPromoImage];
+//   updateSlideInfo();
+// });
 
-setInterval(() => {
-  if (currentPromoImage === promoImages.length - 1) currentPromoImage = 0;
-  else currentPromoImage++;
-  promoCanvas.src = promoImages[currentPromoImage];
-  updateSlideInfo();
-}, 4000);
+// setInterval(() => {
+//   if (currentPromoImage === promoImages.length - 1) currentPromoImage = 0;
+//   else currentPromoImage++;
+//   promoCanvas.src = promoImages[currentPromoImage];
+//   updateSlideInfo();
+// }, 4000);
 
-function updateSlideInfo() {
-  const slideInfoChilds = slideInfo.children;
-  for (let i = 0; i < promoImages.length; i++) {
-    if (i === currentPromoImage) {
-      slideInfoChilds[i].classList.add("bg-black");
-    } else {
-      slideInfoChilds[i].classList.remove("bg-black");
-    }
-  }
-}
+// function updateSlideInfo() {
+//   const slideInfoChilds = slideInfo.children;
+//   for (let i = 0; i < promoImages.length; i++) {
+//     if (i === currentPromoImage) {
+//       slideInfoChilds[i].classList.add("bg-black");
+//     } else {
+//       slideInfoChilds[i].classList.remove("bg-black");
+//     }
+//   }
+// }
