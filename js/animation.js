@@ -26,3 +26,26 @@ Array.from([room1, room2]).forEach((r) => {
     canvas.src = images[current];
   });
 });
+
+function executeTheAboutCounter() {
+  const aboutStuffs = document.getElementsByClassName("about-stuff");
+  Array.from(aboutStuffs).forEach((d) => {
+    const counter = parseInt(d.dataset.count);
+    let i = 0;
+    const idInterval = setInterval(() => {
+      d.textContent = i++;
+      if (i === counter + 1) clearInterval(idInterval);
+    }, 0.6);
+  });
+}
+
+let happened = false;
+window.onscroll = function () {
+  if (!happened && window.scrollY >= 1200 && window.innerWidth >= 768) {
+    executeTheAboutCounter();
+    happened = true;
+  } else if (!happened && window.scrollY >= 900 && window.innerWidth < 768) {
+    executeTheAboutCounter();
+    happened = true;
+  }
+};
