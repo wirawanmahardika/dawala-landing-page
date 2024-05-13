@@ -35,16 +35,16 @@ function executeTheAboutCounter() {
     const idInterval = setInterval(() => {
       d.textContent = i++;
       if (i === counter + 1) clearInterval(idInterval);
-    }, 0.6);
+    }, 50);
   });
 }
 
 let happened = false;
 window.onscroll = function () {
-  if (!happened && window.scrollY >= 1200 && window.innerWidth >= 768) {
+  if (!happened && window.scrollY >= 275 && window.innerWidth >= 768) {
     executeTheAboutCounter();
     happened = true;
-  } else if (!happened && window.scrollY >= 900 && window.innerWidth < 768) {
+  } else if (!happened && window.scrollY >= 246 && window.innerWidth < 768) {
     executeTheAboutCounter();
     happened = true;
   }
