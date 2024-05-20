@@ -648,10 +648,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -666,10 +662,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.-mt-2 {
-  margin-top: -0.5rem;
 }
 
 .block {
@@ -1178,7 +1170,7 @@ video {
 .carousel {
   background-image: url("../img/carousel-1.jpg");
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
 }
 
@@ -1326,10 +1318,6 @@ video {
     flex-direction: column;
   }
 
-  .md\:items-baseline {
-    align-items: baseline;
-  }
-
   .md\:p-2 {
     padding: 0.5rem;
   }
@@ -1344,6 +1332,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawala Hotel</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animation.css" />
-    <link rel="icon" href="img/dawala-logo.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="icon" href="/img/dawala-logo.png" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,14 @@
   <body class="font-poppins">
     <!-- start navbar -->
     <nav
-      class="sticky top-0 p-3 bg-slate-900 flex justify-between items-center z-[999] md:items-baseline md:p-5"
+      class="sticky top-0 p-3 bg-slate-900 flex justify-between items-center z-[999] md:p-5"
     >
-      <h1 class="font-bold text-2xl text-yellow-500 uppercase">Dawala</h1>
+      <div class="flex gap-x-3 items-center">
+        <img src="/img/dawala-logo.png" alt="logo" class="size-8" />
+        <h1 class="font-bold text-2xl text-yellow-500 uppercase">
+          Dawala Hotel
+        </h1>
+      </div>
 
       <!-- start table navbar -->
       <ul class="hidden md:flex gap-x-3 text-slate-200 lg:gap-x-6">
@@ -106,7 +111,7 @@
         <h3
           class="font-bold text-3xl capitalize text-white text-center font-poppins sm:text-4xl"
         >
-          Discover A Brand <br />
+          Discover A Brand <br class="lg:hidden" />
           Luxurious Hotel
         </h3>
         <a
@@ -474,7 +479,7 @@
           <div
             class="relative z-[88]"
             id="room-1"
-            data-images="/dawala-landing-page/img/room-1.jpg;/dawala-landing-page/img/room-2.jpg;/dawala-landing-page/img/room-3.jpg"
+            data-images="/img/room-1.jpg;/img/room-2.jpg;/img/room-3.jpg"
           >
             <img alt="room-image" class="w-full" />
             <svg
@@ -522,7 +527,7 @@
           <div
             class="relative z-[88]"
             id="room-2"
-            data-images="/dawala-landing-page/img/room-3.jpg;/dawala-landing-page/img/room-2.jpg;/dawala-landing-page/img/room-1.jpg"
+            data-images="/img/room-3.jpg;/img/room-2.jpg;/img/room-1.jpg"
           >
             <img alt="room-image" class="w-full" />
             <svg
