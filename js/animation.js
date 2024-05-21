@@ -49,3 +49,20 @@ window.onscroll = function () {
     happened = true;
   }
 };
+
+// slider animation carousel
+const slider = document.querySelector(".slider");
+const sliderWidth = slider.clientWidth;
+
+let leftValue = 0;
+setInterval(() => {
+  if (leftValue >= sliderWidth * 3) {
+    leftValue = 0;
+  } else {
+    leftValue += slider.clientWidth;
+  }
+  slider.scrollTo({
+    behavior: "smooth",
+    left: leftValue,
+  });
+}, 3000);

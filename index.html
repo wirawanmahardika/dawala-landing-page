@@ -98,15 +98,32 @@
     <!-- end navbar -->
 
     <!-- start carousel -->
-    <div
-      id="home"
-      class="carousel || w-full h-[80vh] relative flex items-center justify-center"
-    >
+    <div id="home" class="w-full h-[80vh] relative z-30 overflow-hidden">
       <div
-        class="w-full h-full bg-black bg-opacity-50 absolute top-0 left-0"
+        class="slider w-full flex h-full overflow-hidden relative"
+        style="scroll-snap-type: x mandatory"
+      >
+        <!-- start images -->
+        <img
+          src="/img/carousel-1.jpg"
+          style="flex: 1 0 100%; scroll-snap-align: start"
+        />
+        <img
+          src="/img/room-2.jpg"
+          style="flex: 1 0 100%; scroll-snap-align: start"
+        />
+        <img
+          src="/img/room-3.jpg"
+          style="flex: 1 0 100%; scroll-snap-align: start"
+        />
+        <!-- end images -->
+      </div>
+
+      <div
+        class="h-full bg-black bg-opacity-50 absolute w-full z-30 top-0 left-0"
       ></div>
       <div
-        class="m-auto flex flex-col justify-center items-center relative z-10 gap-y-6"
+        class="flex flex-col justify-center items-center absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 gap-y-6"
       >
         <h3
           class="font-bold text-3xl capitalize text-white text-center font-poppins sm:text-4xl"
@@ -479,7 +496,7 @@
           <div
             class="relative z-[88]"
             id="room-1"
-            data-images="/img/room-1.jpg;/img/room-2.jpg;/img/room-3.jpg"
+            data-images="/dawala-landing-page/img/room-1.jpg;/dawala-landing-page/room-2.jpg;/dawala-landing-page/room-3.jpg"
           >
             <img alt="room-image" class="w-full" />
             <svg
@@ -527,7 +544,7 @@
           <div
             class="relative z-[88]"
             id="room-2"
-            data-images="/img/room-3.jpg;/img/room-2.jpg;/img/room-1.jpg"
+            data-images="/dawala-landing-page/img/room-3.jpg;/dawala-landing-page/room-2.jpg;/dawala-landing-page/room-1.jpg"
           >
             <img alt="room-image" class="w-full" />
             <svg
@@ -653,7 +670,7 @@
         <div class="shadow-2xl text-gray-200">
           <div class="relative z-[88]">
             <img
-              src="https://images.pexels.com/photos/6657469/pexels-photo-6657469.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://images.pexels.com/photos/3948080/pexels-photo-3948080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="room-image"
               class="w-full"
             />
@@ -661,7 +678,9 @@
             <span
               class="italic text-[12px] sm:text-xl text-center font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
-              <span class="text-nowrap sm:text-lg lg:text-lg">Bandung</span>
+              <span class="text-nowrap sm:text-lg lg:text-lg"
+                >Sulawesi Tenggara</span
+              >
               <br />
               <span class="font-normal text-[8px] sm:text-sm text-nowrap"
                 >start from Rp 250.000</span
@@ -693,7 +712,7 @@
         <div class="shadow-2xl text-gray-200">
           <div class="relative z-[88]">
             <img
-              src="https://images.pexels.com/photos/2116715/pexels-photo-2116715.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://images.pexels.com/photos/3948080/pexels-photo-3948080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="room-image"
               class="w-full"
             />
@@ -701,26 +720,9 @@
             <span
               class="italic text-[12px] sm:text-xl text-center font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
-              <span class="text-nowrap sm:text-lg lg:text-lg">Jakarta</span>
-              <br />
-              <span class="font-normal text-[8px] sm:text-sm text-nowrap"
-                >start from Rp 250.000</span
+              <span class="text-nowrap sm:text-lg lg:text-lg"
+                >Sulawesi Tenggara</span
               >
-            </span>
-          </div>
-        </div>
-        <div class="shadow-2xl text-gray-200">
-          <div class="relative z-[88]">
-            <img
-              src="https://images.pexels.com/photos/6657469/pexels-photo-6657469.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="room-image"
-              class="w-full"
-            />
-            <div class="absolute bg-black inset-0 opacity-20"></div>
-            <span
-              class="italic text-[12px] sm:text-xl text-center font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <span class="text-nowrap sm:text-lg lg:text-lg">Bandung</span>
               <br />
               <span class="font-normal text-[8px] sm:text-sm text-nowrap"
                 >start from Rp 250.000</span
@@ -752,7 +754,7 @@
         <div class="shadow-2xl text-gray-200">
           <div class="relative z-[88]">
             <img
-              src="https://images.pexels.com/photos/2116715/pexels-photo-2116715.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="https://images.pexels.com/photos/3948080/pexels-photo-3948080.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="room-image"
               class="w-full"
             />
@@ -760,7 +762,30 @@
             <span
               class="italic text-[12px] sm:text-xl text-center font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             >
-              <span class="text-nowrap sm:text-lg lg:text-lg">Jakarta</span>
+              <span class="text-nowrap sm:text-lg lg:text-lg"
+                >Sulawesi Tenggara</span
+              >
+              <br />
+              <span class="font-normal text-[8px] sm:text-sm text-nowrap"
+                >start from Rp 250.000</span
+              >
+            </span>
+          </div>
+        </div>
+        <div class="shadow-2xl text-gray-200">
+          <div class="relative z-[88]">
+            <img
+              src="https://images.pexels.com/photos/3948080/pexels-photo-3948080.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="room-image"
+              class="w-full"
+            />
+            <div class="absolute bg-black inset-0 opacity-20"></div>
+            <span
+              class="italic text-[12px] sm:text-xl text-center font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <span class="text-nowrap sm:text-lg lg:text-lg"
+                >Sulawesi Tenggara</span
+              >
               <br />
               <span class="font-normal text-[8px] sm:text-sm text-nowrap"
                 >start from Rp 250.000</span
@@ -1190,8 +1215,8 @@
 
       <!-- End Contact -->
     </footer>
-
     <!-- end footer -->
+
     <script src="js/animation.js"></script>
     <span class="hidden sm:size-3 md:size-4 sm:border-2"></span>
   </body>
