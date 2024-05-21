@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="w-full h-screen p-8">
+      <div
+        class="slider flex overflow-x-auto"
+        style="scroll-snap-type: x mandatory"
+      >
+        <img
+          src="img/room-1.jpg"
+          style="flex: 1 0 100%; scroll-snap-align: start"
+        />
+        <img
+          src="img/room-2.jpg"
+          style="flex: 1 0 100%; scroll-snap-align: start"
+        />
+        <img
+          src="img/room-3.jpg"
+          style="flex: 1 0 100%; scroll-snap-align: start"
+        />
+      </div>
+    </div>
+
+    <script>
+      const slider = document.querySelector(".slider");
+      const sliderWidth = slider.clientWidth;
+
+      let leftValue = 0;
+      setInterval(() => {
+        if (leftValue >= sliderWidth * 3) {
+          leftValue = 0;
+        } else {
+          leftValue += slider.clientWidth;
+        }
+        slider.scrollTo({
+          behavior: "smooth",
+          left: leftValue,
+        });
+      }, 2000);
+    </script>
+  </body>
+</html>
