@@ -1,87 +1,91 @@
-# Welcome to React Router!
+# Dawala Hotel
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Landing page resmi **Dawala Hotel Makassar** yang dibangun ulang menggunakan **React Router**, **React 19**, **TypeScript**, **Tailwind CSS v4**, dan **DaisyUI v5**.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Tech Stack
 
-## Features
+- **Framework:** [React Router](https://reactrouter.com/) (SSR & Vite)
+- **UI Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) + [DaisyUI v5](https://daisyui.com/)
+- **Language:** TypeScript
+- **Runtime / Package Manager:** [Bun](https://bun.sh/)
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Fitur Utama
 
-## Getting Started
+- **Navbar Responsif:** Sticky navbar dengan efek blur, menu desktop, tombol CTA *Book Now*, dan dropdown menu mobile.
+- **Hero Carousel:** Slider otomatis dengan indikator slide interaktif dan tombol navigasi ke daftar kamar maupun kontak WhatsApp.
+- **About & Statistik:** Animasi counter statistik hotel (`Rooms`, `Events`, `Clients`) yang aktif saat bagian masuk ke viewport.
+- **Special Offers:** Daftar paket promo dengan tautan langsung ke WhatsApp.
+- **Services:** Informasi layanan utama hotel (*High-Speed WiFi*, *24/7 Hospitality*, *Secure Parking*).
+- **Rooms:** Kartu tipe kamar (*Deluxe Room* & *Suite Room*) lengkap dengan galeri foto interaktif, badge fasilitas, harga, dan tombol *Book Now*.
+- **Showcases & Landmark:** Embed video YouTube fasilitas hotel serta grid destinasi sekitar.
+- **Guest Comments:** Ulasan tamu dengan rating bintang.
+- **Footer:** Alamat hotel, peta Google Maps, informasi kontak, dan tautan media sosial.
 
-### Installation
+## Struktur Project
 
-Install the dependencies:
+```text
+├── app/
+│   ├── components/
+│   │   ├── AboutSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── GuestCommentsSection.tsx
+│   │   ├── HeroCarousel.tsx
+│   │   ├── LandmarkSection.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── RoomsSection.tsx
+│   │   ├── SectionHeading.tsx
+│   │   ├── ServicesSection.tsx
+│   │   ├── ShowcasesSection.tsx
+│   │   └── SpecialOffersSection.tsx
+│   ├── routes/
+│   │   └── home.tsx
+│   ├── app.css
+│   ├── root.tsx
+│   └── routes.ts
+├── public/
+│   ├── favicon.ico
+│   └── img/
+├── package.json
+├── react-router.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## Memulai
+
+### Instalasi
 
 ```bash
-npm install
+bun install
 ```
 
 ### Development
 
-Start the development server with HMR:
+Jalankan development server dengan HMR:
 
 ```bash
-npm run dev
+bun run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Aplikasi dapat diakses di `http://localhost:5173`.
 
-## Building for Production
-
-Create a production build:
+### Typecheck & Build
 
 ```bash
-npm run build
+bun run typecheck
+bun run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+### Menjalankan Production Server
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+bun run start
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## Docker Deployment
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
+```bash
+docker build -t dawala-hotel .
+docker run -p 3000:3000 dawala-hotel
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
